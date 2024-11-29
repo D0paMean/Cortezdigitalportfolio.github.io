@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Finals Web Portfolio</title>
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <a href="#home">
+            <img src="dopamean.png" class="logo" alt="logo" />
+            </a>
+        </div>
+    
+    <nav>
+        <a href="#home" class="active"> Home</a>
+        <div class="dropdown">
+            <a  class="dropdown-toggle" >Services</a>
+            <div class="dropdown-menu">
+                <a href="index_illustration.html">Illustrations</a>
+                <a href="index_photo.html">Photo Manipulation </a>
+                <a href="index__3d.html">3D Modeling</a>
+            </div>
+        </div>        
+        <a href="cv.html">CV</a>
+
+        <button onclick="logout()" style="    
+        font-size: 1.8rem;
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        margin-left: 4rem;
+        font-weight: 500;
+        transition: 0.3s ease;
+        border-bottom: 3px solid transparent;
+        cursor: pointer;
+        ">Logout</button>   
+
+    </nav>
+    
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+</header>
+
+    <section class="home">
+        <div class="home-img" id="home">
+            <img src="Hero.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Heya! It's <span>Dopa Mean</span></h1>
+            <h3 class="typing-text">I am <span></span></h3>
+            <p>Hi, I’m Cedrick Cortez, but you can call me Ced or Dopa, my artist name. I’m a 21 years old starting artist. As of right now, the things that I am focusing on are stylized illustrations and sticker making. And I am interested mostly in cartoony style for my art.
+                I don't really mind venturing onto uncharted territories when it comes to art so my artstyle is highly flexible.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/Z.corpuz.cortez"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=cedrickcortez45@gmail.com&tf=1"><i class="fa-brands fa-google"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/absrd_boi/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+          <section class="knowmore" id="know-more">
+            <div class="content">
+                <h1>Why I do <span>Art </span>and<span> Design</span></h1>
+                <p>Hi, I’m Cedrick Cortez, but you can call me Ced or Dopa, my artist name.I’m a 21 years old starting artist. As of right now, the things that I am focusing on are stylized illustrations and sticker making. And I am interested mostly on cartoony style for my art.
+                    I don't really mind venturing onto uncharted territories when it comes to art so my artstyle is highly flexible.
+                </p>
+                <a href="https://drive.google.com/drive/folders/1bYGDUVrHqY5IV9jzm8vPRz2c6zAjt1ZQ?usp=sharing" class="btn">View Portfolio</a>
+
+            </div>
+        </section>
+
+
+
+</body>
+<script>
+    function toggleMenu() {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('active');
+    }
+
+    function logout() {
+    alert("Thank you for using the website!");
+  window.location.href = "index_login.html";
+}
+
+    </script>
+</html>
